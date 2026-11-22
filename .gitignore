@@ -1,0 +1,17 @@
+# large / regenerable artefacts (re-created by the notebooks, see README)
+data/raw/
+data/processed/*
+!data/processed/sd_meta.csv
+checkpoints/*.npy
+checkpoints/*.pt
+checkpoints/iter1/
+*.zip
+*.h5
+
+# any PDF in the repository root (course handouts / other documents are not part of the submission); report/report.pdf is still tracked
+/*.pdf
+
+# python / jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc

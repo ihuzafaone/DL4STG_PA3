@@ -1,0 +1,41 @@
+{
+ "threads": 12,
+ "logical_cores": 24,
+ "cpu": "Intel(R) Core(TM) i7-14650HX",
+ "steps_per_epoch": 549,
+ "batch_size": 64,
+ "models": {
+  "temporal_only": {
+   "graph": "none",
+   "params": 13828,
+   "train_epoch_sec": 60.30946375399981,
+   "val_pass_sec": 5.26497481000024,
+   "epoch_total_sec": 65.57443856400005,
+   "val_mae_after_1_epoch": 57.32931404474055
+  },
+  "stgnn_fixed": {
+   "graph": "fixed",
+   "params": 14884,
+   "train_epoch_sec": 56.51602325900012,
+   "val_pass_sec": 5.2251363199998195,
+   "epoch_total_sec": 61.74115957899994,
+   "val_mae_after_1_epoch": 92.39975502348996
+  },
+  "stgnn_adaptive": {
+   "graph": "adaptive",
+   "params": 29204,
+   "train_epoch_sec": 67.1625566749999,
+   "val_pass_sec": 6.178478326000004,
+   "epoch_total_sec": 73.34103500099991,
+   "val_mae_after_1_epoch": 79.41280880789336
+  },
+  "stgnn_hybrid": {
+   "graph": "hybrid",
+   "params": 29205,
+   "train_epoch_sec": 69.1229834730002,
+   "val_pass_sec": 6.154933529000118,
+   "epoch_total_sec": 75.27791700200032,
+   "val_mae_after_1_epoch": 77.56790659220023
+  }
+ }
+}

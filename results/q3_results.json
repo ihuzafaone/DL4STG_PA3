@@ -1,0 +1,285 @@
+{
+ "flow_units": {
+  "frac_integer": 1.0,
+  "frac_div12": 0.08575082803882356,
+  "expected_if_counts": 0.08333333333333333,
+  "aggregation": "SUM of 3 five-minute counts -> vehicles per 15 min"
+ },
+ "missing_overall_5min": {
+  "total_readings": 150738048,
+  "nan": 7636666,
+  "zeros_total": 402018,
+  "stuck_zero": 85685,
+  "stuck_positive": 19502,
+  "missing_5min": 7741853,
+  "nan_pct": 5.066183423046582,
+  "zeros_total_pct": 0.2666997518768453,
+  "stuck_zero_pct": 0.05684364441285587,
+  "stuck_positive_pct": 0.012937675828202313,
+  "missing_5min_pct": 5.13596474328764
+ },
+ "dst": {
+  "morning_rise_hour_winter": 5.583333333333333,
+  "morning_peak_hour_winter": 7.75,
+  "morning_rise_hour_summer": 5.5,
+  "morning_peak_hour_summer": 7.75,
+  "days": {
+   "2020-03-08": {
+    "kind": "spring-forward",
+    "hour": 2,
+    "nan_frac_in_hour": 1.0,
+    "nan_frac_other_hours_mean": 0.0018170019467878002,
+    "steps_in_day": 288
+   },
+   "2021-03-14": {
+    "kind": "spring-forward",
+    "hour": 2,
+    "nan_frac_in_hour": 1.0,
+    "nan_frac_other_hours_mean": 0.0,
+    "steps_in_day": 288
+   },
+   "2020-11-01": {
+    "kind": "fall-back",
+    "hour": 1,
+    "nan_frac_in_hour": 0.009950248756218905,
+    "nan_frac_other_hours_mean": 5.407743889249405e-06,
+    "steps_in_day": 288
+   },
+   "2021-11-07": {
+    "kind": "fall-back",
+    "hour": 1,
+    "nan_frac_in_hour": 0.008582089552238806,
+    "nan_frac_other_hours_mean": 2.163097555699762e-05,
+    "steps_in_day": 288
+   }
+  }
+ },
+ "resample": {
+  "rule": "sum of 3 five-minute counts, NaN-aware (2/3 valid -> x3/2, <=1 valid -> NaN)",
+  "T15": 70176,
+  "bins_full": 47659704,
+  "bins_two": 6914,
+  "bins_missing": 2579398,
+  "missing_15min_pct": 5.133537353488881
+ },
+ "imputation": {
+  "observed": 47666618,
+  "forward_filled": 15505,
+  "train_mean_filled": 2563893,
+  "total": 50246016,
+  "sensors_without_2020_obs": 19,
+  "global_train_mean": 607.7505493164062,
+  "observed_pct": 94.86646264651112,
+  "forward_filled_pct": 0.030858167939125762,
+  "train_mean_filled_pct": 5.102679185549756
+ },
+ "valid_pct_per_split": {
+  "train(2020)": {
+   "rows": 35136,
+   "valid_pct": 95.82478315703514
+  },
+  "val(Jan-Mar 2021)": {
+   "rows": 8640,
+   "valid_pct": 93.84386962031864
+  },
+  "test(Apr-Dec 2021)": {
+   "rows": 26400,
+   "valid_pct": 93.92569197562214
+  }
+ },
+ "week_plot": {
+  "week": "2020-02-03..2020-02-09",
+  "sensors": [
+   "1125737",
+   "1108665",
+   "1108711"
+  ],
+  "n_candidates": 687
+ },
+ "ordering_check": {
+  "median_km_connected": 1.4007224909414537,
+  "median_km_all_pairs": 18.95784543348444,
+  "median_km_if_rows_shuffled": 18.150681460971054
+ },
+ "adjacency": {
+  "nodes": 716,
+  "nonzero_including_diagonal": 18035,
+  "diagonal_nonzero": 716,
+  "diagonal_value": 1.0,
+  "nonzero_edges_excl_self_loops": 17319,
+  "density_pct": 3.3782887550326146,
+  "weight_min": 0.010001835317713963,
+  "weight_max": 0.9999998696620915,
+  "weight_mean": 0.29706396932193135,
+  "allclose_symmetric": false,
+  "unequal_entries": 21022,
+  "asymmetric_pairs": 10511,
+  "edges_present_in_one_direction_only": 3711,
+  "edges_both_directions_unequal_weight": 13600,
+  "edges_both_directions_equal": 8,
+  "out_degree": {
+   "min": 0,
+   "mean": 24.18854748603352,
+   "median": 20.0,
+   "max": 70,
+   "zero": 8
+  },
+  "in_degree": {
+   "min": 0,
+   "mean": 24.18854748603352,
+   "median": 19.0,
+   "max": 68,
+   "zero": 8
+  },
+  "isolated_nodes": 3
+ },
+ "q3c": {
+  "sensor_index": 33,
+  "sensor_id": "1126411",
+  "one_hop": 20,
+  "within_two_hop": 73,
+  "strict_two_hop": 53,
+  "one_hop_ids": [
+   "1114805",
+   "1114035",
+   "1108547",
+   "1118707",
+   "1117871",
+   "1108615",
+   "1117818",
+   "1126426",
+   "1114806",
+   "1108711",
+   "1108693",
+   "1111514",
+   "1113486",
+   "1115356",
+   "1115413",
+   "1115432",
+   "1115438",
+   "1116574",
+   "1115528",
+   "1115517"
+  ],
+  "two_hop_ids": [
+   "1117748",
+   "1113976",
+   "1117741",
+   "1108603",
+   "1117835",
+   "1117717",
+   "1118078",
+   "1108611",
+   "1108613",
+   "1114050",
+   "1108617",
+   "1118496",
+   "1118521",
+   "1108665",
+   "1117683",
+   "1108417",
+   "1117734",
+   "1108605",
+   "1118702",
+   "1108609",
+   "1108728",
+   "1114540",
+   "1111551",
+   "1115420",
+   "1115426",
+   "1111566",
+   "1115444",
+   "1116783",
+   "1114546",
+   "1115555",
+   "1115565",
+   "1111552",
+   "1116165",
+   "1115548",
+   "1111540",
+   "1115572",
+   "1121818",
+   "1114450",
+   "1114457",
+   "1113279",
+   "1111539",
+   "1108331",
+   "1111520",
+   "1121821",
+   "1114463",
+   "1111509",
+   "1121288",
+   "1116112",
+   "1113460",
+   "1108572",
+   "1115921",
+   "1108391",
+   "1115929"
+  ]
+ },
+ "q3c_correlation": {
+  "raw": {
+   "n_with_both_rings": 703,
+   "n": 685,
+   "one_hop": 0.8646961318044972,
+   "two_hop": 0.8671152473808191,
+   "random": 0.8427119735544802,
+   "frac_sensors_onehop_gt_random": 0.7065693430656934
+  },
+  "residual": {
+   "n_with_both_rings": 703,
+   "n": 685,
+   "one_hop": 0.7343183593773759,
+   "two_hop": 0.7275832475278198,
+   "random": 0.6722182070342176,
+   "frac_sensors_onehop_gt_random": 0.9167883211678832
+  }
+ },
+ "q3c_oversmoothing": {
+  "weak_components": 7,
+  "strong_components": 17,
+  "std_ratio_real": {
+   "0": 1.0,
+   "1": 0.7280368692928063,
+   "2": 0.663320141335055,
+   "4": 0.5945666287016942,
+   "8": 0.5156763186803381,
+   "16": 0.44820581317432034,
+   "32": 0.4114732232959071,
+   "40": 0.4040629639695874
+  },
+  "std_ratio_random": {
+   "0": 1.0,
+   "1": 0.33239415921243715,
+   "2": 0.25890471443368707,
+   "4": 0.208493285956308,
+   "8": 0.17946198905130079,
+   "16": 0.17536397794836722,
+   "32": 0.1824476115939605,
+   "40": 0.18559521436801452
+  },
+  "dirichlet_real": {
+   "0": 1.0,
+   "1": 0.14062664713179185,
+   "2": 0.07250717043602548,
+   "4": 0.0380573840695375,
+   "8": 0.019071495106146894,
+   "16": 0.008245859461817277,
+   "32": 0.00475917019211651,
+   "40": 0.004415093245931813
+  },
+  "receptive_field_mean": {
+   "0": 1.0,
+   "1": 25.18854748603352,
+   "2": 67.92877094972067,
+   "3": 116.98463687150839,
+   "5": 231.23882681564245,
+   "10": 468.75977653631287,
+   "20": 668.1508379888268,
+   "30": 687.2625698324023
+  },
+  "nnz_Ahat": 18035,
+  "dense_cost_per_layer_flops": 32809984,
+  "sparse_cost_per_layer_flops": 1154240
+ }
+}

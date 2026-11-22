@@ -1,0 +1,18 @@
+{
+ "cpu_model": "Intel(R) Core(TM) i7-14650HX",
+ "cpu_physical_cores": 12,
+ "cpu_logical_cores": 24,
+ "ram_gb": 15.5,
+ "os": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+ "python": "3.11.17",
+ "torch": "2.4.1+cu124",
+ "numpy": "2.4.6",
+ "cuda_available": true,
+ "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+ "gpu_memory_gb": 8.0,
+ "cuda_version": "12.4",
+ "pandas": "3.0.6",
+ "h5py": "3.16.0",
+ "matplotlib": "3.11.2",
+ "sklearn": "1.9.1"
+}

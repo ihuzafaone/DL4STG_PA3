@@ -1,0 +1,8 @@
+model,graph,self_path,n_seeds,test_MAE,test_RMSE,val_MAE,time_s,epochs
+temporal_only,none,False,3,61.48 ± 0.53,96.49 ± 0.74,52.49 ± 0.45,359 ± 140,"[23, 49, 33]"
+stgnn_fixed,fixed,False,3,91.11 ± 0.81,143.32 ± 0.48,77.37 ± 0.79,588 ± 96,"[45, 60, 60]"
+stgnn_adaptive,adaptive,False,3,74.82 ± 0.61,121.31 ± 0.80,59.19 ± 0.39,702 ± 58,"[52, 58, 60]"
+stgnn_hybrid,hybrid,False,3,72.07 ± 0.18,116.12 ± 0.92,57.32 ± 0.35,654 ± 97,"[52, 45, 60]"
+stgnn_fixed_skip,fixed,True,3,56.50 ± 0.18,88.71 ± 0.14,47.11 ± 0.31,459 ± 100,"[34, 42, 52]"
+stgnn_adaptive_skip,adaptive,True,3,50.20 ± 0.09,79.73 ± 0.07,40.79 ± 0.29,667 ± 138,"[41, 60, 60]"
+stgnn_hybrid_skip,hybrid,True,3,50.62 ± 0.19,80.17 ± 0.21,41.15 ± 0.33,599 ± 147,"[41, 60, 40]"

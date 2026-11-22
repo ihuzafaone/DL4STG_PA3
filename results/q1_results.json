@@ -1,0 +1,104 @@
+{
+ "a": {
+  "N1": [
+   1,
+   -1,
+   0,
+   0
+  ],
+  "N2": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "n": 4,
+  "S": 0,
+  "steady_N1": 2,
+  "steady_N2": 4,
+  "n_random_trials": 2000,
+  "max_output_gap_sum_of_messages": 2.220446049250313e-16,
+  "max_output_gap_closed_form": 0.0
+ },
+ "b": {
+  "K": 8,
+  "B": 9,
+  "phi": {
+   "-1": 1,
+   "0": 9,
+   "1": 81
+  },
+  "n_triples": 164,
+  "all_sums_distinct": true,
+  "decoding_exact": true,
+  "max_sum": 648,
+  "min_sum": 1,
+  "nonsteady_phi_x2_verified": true
+ },
+ "c": {
+  "table": {
+   "(i) #steady|Sum": true,
+   "(i) #steady|Mean": false,
+   "(i) #steady|Max": false,
+   "(ii) >half slowing|Sum": true,
+   "(ii) >half slowing|Mean": true,
+   "(ii) >half slowing|Max": false,
+   "(iii) any slowing|Sum": true,
+   "(iii) any slowing|Mean": true,
+   "(iii) any slowing|Max": true
+  },
+  "counterexamples": {
+   "(i) #steady|Mean": {
+    "vector": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "nbhd1": [
+     0
+    ],
+    "ans1": 1,
+    "nbhd2": [
+     0,
+     0
+    ],
+    "ans2": 2
+   },
+   "(i) #steady|Max": {
+    "vector": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "nbhd1": [
+     0
+    ],
+    "ans1": 1,
+    "nbhd2": [
+     0,
+     0
+    ],
+    "ans2": 2
+   },
+   "(ii) >half slowing|Max": {
+    "vector": [
+     1.0,
+     0.0,
+     1.0
+    ],
+    "nbhd1": [
+     -1,
+     1
+    ],
+    "ans1": 0,
+    "nbhd2": [
+     -1,
+     -1,
+     1
+    ],
+    "ans2": 1
+   }
+  },
+  "n_neighbourhoods_checked": 164
+ }
+}
